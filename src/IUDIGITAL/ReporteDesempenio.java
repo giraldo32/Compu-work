@@ -59,17 +59,19 @@ public class ReporteDesempenio {
     }
 
 
-
-    //crear metodos
-    public void mostrarReporte() {
+    //crear metodo para imprimir
+    public void imprimir() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Apellido: " + apellido);
         System.out.println("Departamento: " + departamento);
         System.out.println("Puesto: " + puesto);
-        System.out.println("Año de ingreso: " + anioIngreso);
+        System.out.println("Año de Ingreso: " + anioIngreso);
+
+
+
+
+
     }
 
 
-    public void imprimir() {
-    }
 }

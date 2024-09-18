@@ -25,4 +25,16 @@ public class Main {
         System.out.println("Reporte de Desempeño");
         reporte.imprimir();
     }
+
+    //crear metodo para imprimir
+    public void imprimir() {
+    }
+
+    //crear metodos
+    public void mostrarReporte() {
+    }
+
+
+
+
 }
