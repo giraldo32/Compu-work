@@ -4,13 +4,25 @@ package IUDIGITAL;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-       //creame el hello world
-        System.out.printf("Hello and welcome!");
+        //crear objeto de la clase Empleado
+        Empleado empleado = new Empleado("Juan", "Perez", "Gerente", 2010);
+        //crear objeto de la clase Departamento
+        Departamento departamento = new Departamento("Recursos Humanos", "Maria", "Piso 3");
+        //crear objeto de la clase ReporteDesempenio
+        ReporteDesempenio reporte = new ReporteDesempenio("Juan", "Perez", "Recursos Humanos", "Gerente", 2010);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        //imprimir datos del empleado
+        System.out.println("Datos del Empleado");
+        empleado.imprimir();
+        System.out.println();
+
+        //imprimir datos del departamento
+        System.out.println("Datos del Departamento");
+        departamento.imprimir();
+        System.out.println();
+
+        //imprimir datos del reporte de desempeño
+        System.out.println("Reporte de Desempeño");
+        reporte.imprimir();
     }
 }
