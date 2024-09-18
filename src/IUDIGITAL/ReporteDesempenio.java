@@ -1,37 +1,63 @@
 package IUDIGITAL;
 
 public class ReporteDesempenio {
-    //crear atributos
-    private String nombre;
-    private String apellido;
+    //crear atributos id,empleados,fechareporte,puntajedesempenio,comentario,departamento
+    private int id;
+    private String empleados;
+    private String fechaReporte;
+    private int puntajeDesempenio;
+    private String comentario;
     private String departamento;
-    private String puesto;
-    private int anioIngreso;
 
     //crear constructor
-    public ReporteDesempenio(String nombre, String apellido, String departamento, String puesto, int anioIngreso) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public ReporteDesempenio(int id, String empleados, String fechaReporte, int puntajeDesempenio, String comentario, String departamento) {
+        this.id = id;
+        this.empleados = empleados;
+        this.fechaReporte = fechaReporte;
+        this.puntajeDesempenio = puntajeDesempenio;
+        this.comentario = comentario;
         this.departamento = departamento;
-        this.puesto = puesto;
-        this.anioIngreso = anioIngreso;
     }
 
     //crear getters y setters
-    public String getNombre() {
-        return nombre;
+    public int getId() {
+        return id;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getEmpleados() {
+        return empleados;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setEmpleados(String empleados) {
+        this.empleados = empleados;
+    }
+
+    public String getFechaReporte() {
+        return fechaReporte;
+    }
+
+    public void setFechaReporte(String fechaReporte) {
+        this.fechaReporte = fechaReporte;
+    }
+
+    public int getPuntajeDesempenio() {
+        return puntajeDesempenio;
+    }
+
+    public void setPuntajeDesempenio(int puntajeDesempenio) {
+        this.puntajeDesempenio = puntajeDesempenio;
+    }
+
+    public String getComentario() {
+        return comentario;
+    }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
     }
 
     public String getDepartamento() {
@@ -42,36 +68,16 @@ public class ReporteDesempenio {
         this.departamento = departamento;
     }
 
-    public String getPuesto() {
-        return puesto;
-    }
-
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
-    }
-
-    public int getAnioIngreso() {
-        return anioIngreso;
-    }
-
-    public void setAnioIngreso(int anioIngreso) {
-        this.anioIngreso = anioIngreso;
-    }
-
-
     //crear metodo para imprimir
     public void imprimir() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Apellido: " + apellido);
+        System.out.println("ID: " + id);
+        System.out.println("Empleados: " + empleados);
+        System.out.println("Fecha de Reporte: " + fechaReporte);
+        System.out.println("Puntaje de Desempeño: " + puntajeDesempenio);
+        System.out.println("Comentario: " + comentario);
         System.out.println("Departamento: " + departamento);
-        System.out.println("Puesto: " + puesto);
-        System.out.println("Año de Ingreso: " + anioIngreso);
-
-
-
-
-
     }
+
 
 
 }

@@ -1,25 +1,39 @@
 package IUDIGITAL;
 
 public class Departamento {
-    //crear atributos puesto de trabajo
-    private String nombre;
+   //crear atributos id,nombredepartamento,jefe,listaempleados,descripcion,gerente
+    private int id;
+    private String nombreDepartamento;
     private String jefe;
-    private String ubicacion;
+    private String listaEmpleados;
+    private String descripcion;
+    private String gerente;
 
     //crear constructor
-    public Departamento(String nombre, String jefe, String ubicacion) {
-        this.nombre = nombre;
+    public Departamento(int id, String nombreDepartamento, String jefe, String listaEmpleados, String descripcion, String gerente) {
+        this.id = id;
+        this.nombreDepartamento = nombreDepartamento;
         this.jefe = jefe;
-        this.ubicacion = ubicacion;
+        this.listaEmpleados = listaEmpleados;
+        this.descripcion = descripcion;
+        this.gerente = gerente;
     }
 
     //crear getters y setters
-    public String getNombre() {
-        return nombre;
+    public int getId() {
+        return id;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombreDepartamento() {
+        return nombreDepartamento;
+    }
+
+    public void setNombreDepartamento(String nombreDepartamento) {
+        this.nombreDepartamento = nombreDepartamento;
     }
 
     public String getJefe() {
@@ -30,20 +44,37 @@ public class Departamento {
         this.jefe = jefe;
     }
 
-    public String getUbicacion() {
-        return ubicacion;
+    public String getListaEmpleados() {
+        return listaEmpleados;
     }
 
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
+    public void setListaEmpleados(String listaEmpleados) {
+        this.listaEmpleados = listaEmpleados;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getGerente() {
+        return gerente;
+    }
+
+    public void setGerente(String gerente) {
+        this.gerente = gerente;
     }
 
     //crear metodo para imprimir
     public void imprimir() {
-        System.out.println("Nombre: " + nombre);
+        System.out.println("ID: " + id);
+        System.out.println("Nombre del Departamento: " + nombreDepartamento);
         System.out.println("Jefe: " + jefe);
-        System.out.println("Ubicacion: " + ubicacion);
+        System.out.println("Lista de Empleados: " + listaEmpleados);
+        System.out.println("Descripcion: " + descripcion);
+        System.out.println("Gerente: " + gerente);
     }
-
-
 }
