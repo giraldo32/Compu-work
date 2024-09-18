@@ -381,7 +381,7 @@ public class Main {
             reporteDesempenio = new ReporteDesempenio(idReporte, empleados, fechaReporte, puntajeDesempenio, comentario, departamentoReporte);
             reporteDesempenio.imprimir();
         }
-
+//
         //generar reporte individual
         System.out.println("Desea generar un reporte individual? (s/n)");
         respuesta = scanner.nextLine();
