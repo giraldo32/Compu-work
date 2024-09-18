@@ -34,6 +34,9 @@ public class Main {
     public void mostrarReporte() {
     }
 
+//import scanner in order to read input from the user
+
+
 
 
 
