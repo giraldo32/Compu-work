@@ -49,7 +49,7 @@ public class Main {
         Departamento departamento = new Departamento(id, nombreDepartamento, jefe, listaEmpleados, descripcion, gerente);
 
 
-   //crear un objeto de la clase reporte de desempenio por teclado
+        //crear un objeto de la clase reporte de desempenio por teclado
         System.out.println("Ingrese el id del reporte de desempenio: ");
         int idReporte = scanner.nextInt();
         scanner.nextLine();
@@ -75,7 +75,4 @@ public class Main {
     }
 
 }
-
-
-
 
