@@ -100,14 +100,14 @@ public class Main {
             empleado = new Empleado(identidad, nombre, apellido, tipoEmpleado, telefono, correo, direccion, fechaContratacion, cargo, salario);
             empleado.imprimir();
         }
-
+//    eliminar registro empleado
         System.out.println("Desea eliminar un empleado? (s/n)");
         respuesta = scanner.nextLine();
         if (respuesta.equals("s")) {
             empleado = null;
             System.out.println("Empleado eliminado");
         }
-
+        //   actualizar registro de el empleado
         System.out.println("Desea actualizar un empleado? (s/n)");
         respuesta = scanner.nextLine();
         if (respuesta.equals("s")) {
@@ -143,6 +143,8 @@ public class Main {
         //visualizacion empleado
         //generar reporte departamental,individual
 
+
+        //  asignacion empleado a departamento
         System.out.println("Desea asignar un empleado a un departamento? (s/n)");
         respuesta = scanner.nextLine();
         if (respuesta.equals("s")) {
